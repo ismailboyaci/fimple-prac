@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="topBtn">
+        <button class="helpBtn" id="helpbtn">?</button>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <button id="close" class="button"> Close </button>
+          <h2>Tic Tac Toe Rules</h2>
+          <p>1. The game is played on a grid that's 3 squares by 3 squares. </p>
+          <p>2. You are X, your friend is O. Players take turns putting their marks in empty squares.</p>
+          <p>3. The first player to get 3 of her marks in a row (up, down) is the winner.</p>
+          <p>4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</p>
+        </div>
+      </div>
+      <h1 class="head">Tic Tac Toe</h1>
+      <div class="gameDiv">
+        <div class="box" id="0"></div>
+        <div class="box" id="1"></div>
+        <div class="box" id="2"></div>
+        <div class="box" id="3"></div>
+        <div class="box" id="4"></div>
+        <div class="box" id="5"></div>
+        <div class="box" id="6"></div>
+        <div class="box" id="7"></div>
+        <div class="box" id="8"></div>
+      </div>
+      <h1 id="status" class="head"></h1>
+      <button id="restartBtn" class="button">Restart</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
